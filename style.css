@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    background-color: #a1c3ff;
+}
+
+h1,h2{
+    margin-bottom: 15px;
+}
+
+.nav-bar-container {
+    display: flex;
+    background-color: #3474e6;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 60px;
+}
+
+.company-name {
+    font-size: x-large;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.drop-down {
+    display: flex;
+    margin-left: 20px;
+}
+
+.flex-item:nth-of-type(3) > ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.flex-item:nth-of-type(3) li {
+    padding: 10px;
+}
+
+.flex-item:nth-of-type(3) a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-item:nth-of-type(3) a:hover {
+    color: lightblue;
+}
+
+.main-content {
+    background-color: #0151cc;
+    min-height: 400px;
+    color: #fff;
+}
+
+.main-content h1 {
+    font-size: 3rem;
+    font-weight:bold;
+    line-height: 1.2;
+}
+
+.main-content img {
+    max-width: 100%;
+    max-height: 400px;
+}
+
+.main-content >div >div {
+    max-width: 400px;
+}
+
+.section-one{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.head-con {
+    justify-content: space-around;
+}
+
+
+.card {
+    flex: 1;
+    margin: 20px 10px;
+    background-color: #0151cc;
+    border-radius: 10px;
+    padding: 15px 20px; 
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: column;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.card > div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(10, 10, 28);
+    align-items: center;
+    color:white;
+    height: 30px;
+}
+
+/* .nav-ham {
+    width: 200px;
+    height: 50px;
+    color: white;
+    top: 1rem;
+    right: 2rem;
+}
+
+.nav-ham p {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background-color:black;
+} */
+
+@media screen and (max-width:740px) {
+    .sec-con {
+        display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+        text-align: center;
+    }
+
+    .head-con {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .drop-down {
+        display: none;
+    }
+
+}
+
+
+
+    /* Flex-container => element that holds or guide the way the rest of the children will be arranged
+    Flex-item => children element in the parent container
+
+    Flex-container properties:
+    1. display
+    2. justify-content
+    3. align-items
+    4. flex-wrap
+    5. align-content**
+    **flex-flow
+    ... regular css properties
+
+    Flex-item properties:
+    1. align-self
+    2. order
+    3. flex-grow
+    4. flex-shrink
+    5. flex-basis 
+    //4, 5, & 6 can be submarized into flex: grow shrink basis
+    6. display //can become a flex nox itself and inherit all the flex-box properties
+    ... regular css properties */
